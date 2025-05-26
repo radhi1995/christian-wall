@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adContainerNative">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_wall_by_cat"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_weight="1.0"
+                app:layout_scrollFlags="enterAlways|scroll"
+                app:title="@string/wallpaper_settings"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/setting_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/adContainerNative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.rdev.coreutils.widget.NativeAdTemplate
+            android:id="@+id/nativeAdTemplate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ads_outline"
+            app:gnt_template_type="@layout/native_small" />
+        <include
+            android:id="@+id/loadingNativeAd"
+            layout="@layout/loading_ad_view"/>
+    </FrameLayout>
+</RelativeLayout>

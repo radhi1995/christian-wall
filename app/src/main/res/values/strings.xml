@@ -1,3 +1,145 @@
 <resources>
-    <string name="app_name">christian-wall</string>
+    <string name="app_name">Cross Walls</string>
+    <string name="title">Title</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="ad_loading">Ad Loading…</string>
+
+    <string name="action_autowallpaper">Auto Wallpaper</string>
+    <string name="action_autowallpaper_settings">Wallpaper Settings</string>
+    <string name="action_shareapp">Share App</string>
+    <string name="action_more">More App</string>
+    <string name="action_rateus">Rate us</string>
+    <string name="action_privacy">Privacy Policy</string>
+    <string name="action_privacy_settings" translatable="false">Privacy Settings</string>
+
+
+    <string name="action_autowallpaperText">Auto Change Wallpapers</string>
+    <string name="action_autowallpaperSettingText">Setting of Auto change wallpaper</string>
+    <string name="action_shareappText">Share app to social app</string>
+    <string name="action_moreText">More Apps for you</string>
+    <string name="action_rateusText">Rate us to support us</string>
+    <string name="action_privacyText">Policy to used this app</string>
+
+    <string name="no_internet_title">You\'re Offline</string>
+    <string name="no_internet_message">Oops! You\'re offline.\nCheck your connection and try again.</string>
+    <string name="err_empty_url">Provided url is empty!!!</string>
+    <string name="err_no_browser_open_url">No supported app found to perform this action!!! please install required app to open this page.</string>
+
+    <string name="wallpaper">Live Wallpaper</string>
+    <string name="wallpaper_settings">Live Wallpaper Settings</string>
+    <string name="transition_pref">Transition</string>
+    <string name="transition_pref_summary">Choose a transition between pictures</string>
+    <string-array name="transition_choices_human_readable">
+        <item>Fade Transition</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="transition_choices_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="rotate_pref">Rotation</string>
+    <string name="rotate_pref_on">Images will be automatically rotated if needed.
+  </string>
+    <string name="rotate_pref_off">Images will not be rotated.</string>
+    <string name="stretching_pref">Scaling</string>
+    <string name="stretching_pref_on">Images will be scaled to fit the screen.</string>
+    <string name="stretching_pref_off">Images will not be scaled to fit the screen.
+  </string>
+
+    <string name="trim_pref">Lossless trimming</string>
+    <string name="trim_pref_on">Images will be trimmed to fit the screen.</string>
+    <string name="trim_pref_off">Images will not be trimmed to fit the screen.
+  </string>
+
+    <string name="scrolling_pref">Scrolling</string>
+    <string name="scrolling_pref_on">Scrolling is currently enabled</string>
+    <string name="scrolling_pref_off">Scrolling is currently disabled</string>
+    <string name="time_between_pictures">Time between pictures</string>
+    <string name="time_between_pictures_summary">How long before changing to the next picture</string>
+    <string name="click_to_change_pref">Enable double-tap</string>
+    <string name="click_to_change_pref_on">Currently will switch pictures when double tapping on the background.</string>
+    <string name="click_to_change_pref_off">Enable to switch pictures with double tap.</string>
+    <string name="no_images_found">Saved images to your device</string>
+    <string name="file_size_too_big">File is too big!</string>
+    <string name="wallpaper_desc">Randomly switches between photos in a SD card folder.</string>
+
+    <string name="rat_click">Rate Now</string>
+    <string name="later_click">Later</string>
+    <string name="nothanks_click">No, Thanks</string>
+    <string name="rate_description">If you enjoy using this app, would you mind to taking moment to rate is! Thank you for your support!</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_wallpapers">All the wallpapers we used in this app are under Common Creative License(CCL) and the credit goes to their respective owners. These images are not endorsed by any of the prospective owners, and the images are used simply for aesthetic purposes. No copyright infringement is intended, and any request to remove one of the images/logos/names will be honored.</string>
+
+    <string-array name="time_choices_human_readable">
+        <item>1s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>15m</item>
+        <item>30m</item>
+        <item>1hr</item>
+        <item>3hr</item>
+        <item>6hr</item>
+        <item>12hr</item>
+        <item>1d</item>
+    </string-array>
+    <string-array name="time_choices_values">
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>10800000</item>
+        <item>21600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+    </string-array>
+
+    <string name="more_menu">More</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="ads_loading">Ads Loading…</string>
+    <string name="share_image">Share image</string>
+    <string name="delete">Delete</string>
+
+    <string name="ok">Ok</string>
+    <string name="merge_two_urls" translatable="false">%s%s</string>
+
+    <string name="save_image">Save Image</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="set_wallpaper_as">Set Wallpaper as</string>
+    <string name="set_wallpaper_home">Home screen</string>
+    <string name="set_wallpaper_lock">Lock screen</string>
+    <string name="set_wallpaper_both">Home &amp; Lock screen</string>
+
+    <string name="share">Share</string>
+
+    <string name="common_action_allow">Allow</string>
+    <string name="common_action_deny">Deny</string>
+
+    <string name="error_set_wallpaper">Failed to set wallpaper. Please try again later.</string>
+    <string name="error_wallpaper_saved_message">Sorry! failed saved image to gallery</string>
+    <string name="save_successfully_message">Saved image to gallery successfully</string>
+    <string name="set_wallpaper_successfully_message">Wallpaper set successfully</string>
+
+    <string name="permissions_required">Permissions Required!!</string>
+    <string name="missing_permission_dialog">To save image, this app needs the Image storage permission for functions. \n\n To enable  access, go to your device settings > Apps > %S > Permissions and turn on the corresponding permission.</string>
+    <string name="todo">TODO</string>
+    <string name="no_popular_image">No popular images found at the moment.\nCheck back later!</string>
+    <string name="no_favorite_image">You haven\'t added any images to your favorites.\nTap the heart icon to save your favorites!</string>
+    <string name="no_latest_image">No latest images available.\nStay tuned for new uploads!</string>
+    <string name="no_recent_image">You haven\'t viewed any images recently.\nStart exploring now!</string>
+    <string name="no_saved_image">No images saved locally. \nDownload and save your favorite images to view them offline!</string>
+    <string name="loading">Loading…</string>
 </resources>

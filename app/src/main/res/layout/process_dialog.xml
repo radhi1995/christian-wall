@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_container"
+    android:background="@color/black25"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linSpinner"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/black_25_rectangle_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.wallpaper.christianwallpaper.widget.SimpleArcLoader
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:visibility="visible"
+            app:arc_margin="3dp"
+            app:arc_speed="medium"
+            app:arc_style="complete_arc" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:shadowColor="@color/black50"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:text="Loading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

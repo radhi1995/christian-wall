@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="gallery_wallpaper_settings"
+    android:title="@string/wallpaper_settings">
+    <ListPreference
+        android:defaultValue="5000"
+        android:entries="@array/time_choices_human_readable"
+        android:entryValues="@array/time_choices_values"
+        android:key="timer"
+        android:summary="@string/time_between_pictures_summary"
+        android:title="@string/time_between_pictures"
+        app:iconSpaceReserved="false" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="rotate"
+        android:summaryOff="@string/rotate_pref_off"
+        android:summaryOn="@string/rotate_pref_on"
+        android:title="@string/rotate_pref"
+        app:iconSpaceReserved="false" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="scrolling"
+        android:summaryOff="@string/scrolling_pref_off"
+        android:summaryOn="@string/scrolling_pref_on"
+        android:title="@string/scrolling_pref"
+        app:iconSpaceReserved="false" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="stretching"
+        android:summaryOff="@string/stretching_pref_off"
+        android:summaryOn="@string/stretching_pref_on"
+        android:title="@string/stretching_pref"
+        app:iconSpaceReserved="false" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="trim"
+        android:summaryOff="@string/trim_pref_off"
+        android:summaryOn="@string/trim_pref_on"
+        android:title="@string/trim_pref"
+        app:iconSpaceReserved="false" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/transition_choices_human_readable"
+        android:entryValues="@array/transition_choices_values"
+        android:key="transition"
+        android:summary="@string/transition_pref_summary"
+        android:title="@string/transition_pref"
+        app:iconSpaceReserved="false" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="clickToChange"
+        android:summaryOff="@string/click_to_change_pref_off"
+        android:summaryOn="@string/click_to_change_pref_on"
+        android:title="@string/click_to_change_pref"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>

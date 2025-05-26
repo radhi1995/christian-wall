@@ -4,23 +4,72 @@ plugins {
 
 android {
     namespace 'com.wallpaper.christianwallpaper'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.wallpaper.christianwallpaper"
         minSdk 24
-        targetSdk 35
-        versionCode 1
-        versionName "1.0"
-
+        targetSdk 36
+        versionCode 30
+        versionName "3.0.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
+        debug {
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            //app id
+            resValue "string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+
+            // banner
+            resValue "string", "admob_banner", "ca-app-pub-3940256099942544/6300978111"
+
+            // native
+            resValue "string", "admob_native", "ca-app-pub-3940256099942544/2247696110"
+
+            // interstitial
+            resValue "string", "admob_interstitial", "ca-app-pub-3940256099942544/1033173712"
+
+            // rewarded video
+            resValue "string", "admob_rewarded", "ca-app-pub-3940256099942544/5224354917"
+
+            // app open
+            resValue "string", "admob_app_open", "ca-app-pub-3940256099942544/9257395921"
         }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            //app id
+            resValue "string", "admob_app_id", "ca-app-pub-1879937151816281~7630714564"
+
+            // banner
+            resValue "string", "admob_banner", "ca-app-pub-1879937151816281/6188929942"
+
+            // native
+            resValue "string", "admob_native", "ca-app-pub-1879937151816281/8030513311"
+
+            // interstitial
+            resValue "string", "admob_interstitial", "ca-app-pub-1879937151816281/8609303050"
+
+            // rewarded video
+            resValue "string", "admob_rewarded", ""
+
+            // app open
+            resValue "string", "admob_app_open", "ca-app-pub-1879937151816281/8928045244"
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
@@ -30,6 +79,7 @@ android {
 
 dependencies {
 
+    implementation files('libs/core-rdev-utils-release-v1.0.aar')
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
@@ -37,4 +87,26 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation libs.sdp.android
+    implementation libs.ssp.android
+    implementation libs.retrofit
+    implementation libs.converter.gson
+
+    implementation libs.room.runtime
+    annotationProcessor libs.room.compiler
+    implementation libs.preference
+    implementation libs.glide
+    annotationProcessor libs.compiler
+
+    implementation libs.timber
+
+    //admob
+    implementation libs.play.services.ads
+    implementation libs.error.prone.annotations
+
+    // lifecycle
+    implementation libs.lifecycle.process
+
+    implementation libs.onesignal
 }

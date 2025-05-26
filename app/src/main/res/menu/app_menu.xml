@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/autoWallpaper"
+        android:title="@string/action_autowallpaper"/>
+    <item android:id="@+id/autoWallpaperSettings"
+        android:title="@string/action_autowallpaper_settings"/>
+    <item android:id="@+id/shareApp"
+        android:title="@string/action_shareapp"/>
+    <item android:id="@+id/rateUs"
+        android:title="@string/action_rateus"/>
+    <item android:id="@+id/privacy"
+        android:title="@string/action_privacy"/>
+    <item android:id="@+id/privacySetting"
+        android:title="@string/action_privacy_settings"/>
+</menu>

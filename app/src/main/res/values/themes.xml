@@ -1,9 +1,55 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Christianwall" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.CrossWalls" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+
     </style>
 
-    <style name="Theme.Christianwall" parent="Base.Theme.Christianwall" />
+    <style name="Theme.CrossWalls" parent="Base.Theme.CrossWalls" />
+
+    <style name="SettingActivityTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorSecondary">@color/white80</item>
+        <item name="alertDialogTheme">@style/DialogStyle</item>
+        <item name="android:alertDialogTheme">@style/DialogStyle</item>
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialogMaterialTheme</item>
+    </style>
+    <style name="windowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="DialogStyleAlert" parent="Theme.Material3.Light.Dialog.Alert">
+
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="textColorAlertDialogListItem">@color/white</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textAppearanceListItem">@color/white</item>
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.Material3.Dark.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="buttonBarButtonStyle">@style/Alert.Button</item>
+    </style>
+
+    <style name="AlertDialogMaterialTheme" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="buttonBarButtonStyle">@style/Alert.Button</item>
+    </style>
+
+    <style name="Alert.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
 </resources>
