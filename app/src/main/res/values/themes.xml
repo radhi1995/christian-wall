@@ -1,13 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CrossWalls" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ChristianWalls" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/colorAccent</item>
 
     </style>
 
-    <style name="Theme.CrossWalls" parent="Base.Theme.CrossWalls" />
+    <style name="Theme.ChristianWalls" parent="Base.Theme.ChristianWalls" />
 
     <style name="SettingActivityTheme" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>

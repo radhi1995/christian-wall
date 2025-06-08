@@ -20,7 +20,7 @@ public class ChristianApplication extends Application {
 //
 //        initializeAppOpen();
 
-        OneSignal.initWithContext(this, "a0171e09-31e7-43d6-bbd4-4cb56ae050a0");
+        OneSignal.initWithContext(this, "7b6919b5-32af-4c3b-aba5-4abb3b55c5d5");
     }
 
     public static ChristianApplication getInstance() {
